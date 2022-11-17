@@ -2,6 +2,7 @@ sqlalchemy
 bs4
 flask
 flask_sqlalchemy
+email_validator
 flask-login
 flask-cors
 Flask-WTF
