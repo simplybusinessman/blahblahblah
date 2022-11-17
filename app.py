@@ -1,9 +1,14 @@
+import re
 import base64
 import datetime
 from sqlalchemy.sql import text
-from flask import Flask, jsonify, request, make_response, abort
+from flask import Flask, jsonify, request, make_response, abort, session
 from flask_sqlalchemy import SQLAlchemy
-from flask_user import UserManager, UserMixin
+from flask_user import current_user, login_required, roles_required, UserManager, UserMixin, user_manager
+from flask_cors import CORS
+import os
+import random
+from bs4 import BeautifulSoup as bs
 import secrets
 from utils import Utils
 import subprocess
