@@ -2,4 +2,7 @@ sqlalchemy
 bs4
 flask
 flask_sqlalchemy
-flask_cors
+flask-login
+flask-user
+flask-cors
+Flask-WTF
