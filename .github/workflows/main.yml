@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: '3.9.13'
           cache: pip
+      - name: Force flask-user install
+        run: python ./flask-user/setup.py install
+
       - name: Install dependencies
         run: pip install -r requirements.txt
         
