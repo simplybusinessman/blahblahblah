@@ -22,8 +22,7 @@ class ConfigClass(object):
 
 
 def create_app():
-    app = Flask(__name__)
-    app.config.from_object(__name__+'.ConfigClass')
+    
     def check_token(token):
         session_found = Sessions.query.filter_by(session = token).first()
         if session_found is not None:
