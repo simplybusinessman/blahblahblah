@@ -26,9 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
-      - name: Run app.py
-        run: python app.py
       
       - name: Run Dastardly Action Step
         continue-on-error: true                        
