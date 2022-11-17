@@ -1,4 +1,4 @@
 sqlalchemy
 flask
 flask_sqlalchemy
-email_validator
+email-validator
